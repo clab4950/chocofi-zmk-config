@@ -30,42 +30,6 @@
             quick-tap-ms = <200>;
         };
 
-        vim_i: vim_i {
-            compatible = "zmk,behavior-mod-morph";
-            label = "VIM_I";
-            bindings = <&to 0>, <&vim_I>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        vim_o: vim_o {
-            compatible = "zmk,behavior-mod-morph";
-            label = "VIM_O";
-            bindings = <&next_line_enter>, <&previous_line_enter>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        vim_c_r: vim_c_r {
-            compatible = "zmk,behavior-mod-morph";
-            label = "VIM_C_R";
-            #binding-cells = <0>;
-            bindings = <&none>, <&kp LG(LS(Z))>;
-
-            mods = <(MOD_LCTL|MOD_RCTL)>;
-        };
-
-        vim_backspace: vim_backspace {
-            compatible = "zmk,behavior-mod-morph";
-            label = "VIM_BACKSPACE";
-            bindings = <&kp LA(BACKSPACE)>, <&kp LA(DELETE)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LALT|MOD_RALT)>;
-        };
-
         slashandbackslash: slashandbackslash {
             compatible = "zmk,behavior-mod-morph";
             label = "SLASHANDBACKSLASH";
