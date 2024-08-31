@@ -670,9 +670,9 @@
 
         number {
             bindings = <
-  &kp K_UNDO      &kp K_CUT    &kp K_COPY     &kp K_PASTE  &kp K_REDO     &kp KP_PLUS      &lt 0 G          &lt 0 C     &lt 0 R          &lt 0 L
-  &kp LEFT_ARROW  &kp UP       &kp DOWN       &kp RIGHT    &kp PERCENT    &kp EXCLAMATION  &hm F4 NUMBER_4  &hm RGUI T  &hm RIGHT_ALT N  &hm RCTRL S
-  &kp HOME        &kp PAGE_UP  &kp PAGE_DOWN  &kp END      &kp DOLLAR     &kp MINUS        &hm F1 NUMBER_1  &kp W       &kp V            &kp Z
+  &kp K_UNDO      &kp K_CUT    &kp K_COPY     &kp K_PASTE  &kp K_REDO     &kp KP_PLUS      &hm F7 NUMBER_7  &hm F8 NUMBER_8  &hm F9 NUMBER_9  &hm F12 ASTERISK
+  &kp LEFT_ARROW  &kp UP       &kp DOWN       &kp RIGHT    &kp PERCENT    &kp EXCLAMATION  &hm F4 NUMBER_4  &hm F5 NUMBER_5  &hm F6 NUMBER_6  &hm F11 EQUAL
+  &kp HOME        &kp PAGE_UP  &kp PAGE_DOWN  &kp END      &kp DOLLAR     &kp MINUS        &hm F1 NUMBER_1  &hm F2 NUMBER_2  &hm F3 NUMBER_3  &hm F10 SLASH
                                &none          &none        &none          &kp ENTER        &kp PERIOD       &kp N0
             >;
         };
