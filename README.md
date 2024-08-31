@@ -1,11 +1,37 @@
-# zmk-config
+# chocofi-zmk-config
 
-This is a [ZMK](https://zmk.dev) config repo for my [chocofi](https://github.com/pashutk/chocofi), a 36 key split keyboard, arranged in 3 rows of 5 columns with 3 thumb keys on each side.
+https://github.com/clab4950/chocofi-zmk-config
 
-## Keymaps
+## Keymaps editor
 
-Illustrations powered by [keymap-drawer](https://caksoylar.github.io/keymap-drawer?keymap_yaml=H4sIAAAAAAAC_-1ZzXPbRBS_568QBbx2cYI_8tEKyqDIcmKiyEaSk6YhUZ1YM_X4Q66llHqCmaE3mIELDAc4AQcGBrgQLjBckv-kfwmrfSvtSrEaM047ntY56Mm_33u7b9--Xe3bdBpD58QThdOH3bbVtodHTmPQFIVjZ9CzrYHjNTy7mRV8skM1VWmvWjctt99peVbx8YpVHC1gzh644oIglJSyLxaFU6z6YVZwRQHdRyMC7YaEkhUeYOIQgcLTJ79RFZ_UgTw_4zCTYGXN0hm2F2Aqw-oEO2RAhQDnZ4BUybMWshJhVdnUuTYMAJWyKUiqyfASwzfqFYaXGW5sVsqcxQZheifdfqNpucMuYzYTmQ8Io1c2Ni81t5XggMqZRDxG-A84f4TRybhHnnfJUybPndBunRhtK6WKxAdcI7DX6jRtALdZT1mYyneY9hL0J3Kz-DaBPoL5_YQjFEOWagrXKzcdprSeMG6jJslgtFPZZvC6JG8lUIpmKnpi6Dkvgkw7P2PZ_PTbf7OCN-zbOAaDRs8dTcCgi19ojl98Ho6XKD6wO83RlG3_HbT9HeLh3wP4ywj8ZwB_jSZr_ofA4DM0nadzZs5cJ3M47aL8NcjsL1CgM_16fFaH_wQdfh9Zkn8E8FcR-CyAv5lwpf4YGDyZr9Q5M0MMOSyIL-WQ0cVftouuVPoJBS9O-Ha13cvGXPw8RaOx_Rl9-mpFjx1VYSGh12D8h-T5BmCnNLlGLDboJv0qnPIflzUKjiiIblHL2yDfYqrvo3HlET64AxwtNVIUjZzQ04AZm3wZkxn_yYXiIM01uYzitRBRyXAqK7wK7poovMsprKJocQSDf4-PyOKlGulGEJs3aWxep_ImlftUHnDRztHA7vNt5yl4wIMFCmZ5sAjgEgfdoXp3Andx8RayVkJRdL35uMR7ikspmoF0-KlHra71sTNowm9VSpM4Z-CXkVY30vcyGd5Ertb2gPUp8lZSylwW9ezHntVp9WzL7nn2gEYg1R_Yj1rOictT4GVNMkxlXAlHQiNXNVOv0uz1MxZeaNTYD5JdvKM-yir_6q6WXJbXa4Kk69XdaCZy9xk-lFSicw7rbJ3FfCopqkIHGYa-7REti2iF8fehSMBjItW2h9bA7tsNL0Lg6WCm_2MvJtcPUjosuTNkvjACLmcmyTHcN6QNsVW0kk_5BfiLPjfEvzMpd-jiYLk2jVV5DcQtELdB5HOzciBJHTmO13EaTbw4wLdlECsgVqnD-RlxWK3KW9QlEAUQRQoWnkOf63hPUHV2VwQLE-_To0tYjmD0Fmz2z7DrZBFpimHg_UKOQ1LdrMaxiibze8AsD26nqgolDS4d63Qr9LF6bWZcn_gWoaYrcNVaU6U9_P2qGzAeTblrJizkmVgDqjjPwJnOwMk_DFem4KzXSSw_xxcT8ZyOpfx1OeP_80lM-vg--7Tw3C8dk3IhfqgZf0YovMJnhOmT8gUn4rHTPXJccWFR6IvCfr6QFfJrB1i_7ZdOtnts5fy5dkQht-RPcwPDntNHgf4q1i-G-seNvhsWdRGbI8fznG5otozNVuLd_AfrVozRUB4AAA%3D%3D)
+https://nickcoutsos.github.io/keymap-editor/
 
-### layout
+## To transfer a UF2 firmware to a nice!nano v2, you can try these steps:
+1. Get the UF2 file
+   You can build a firmware and get the UF2 file by following the instructions on the Wireless Firmware page.
+2. Prepare the nice!nano
+   Press the RESET button on the board twice to prepare it to receive code. The board will appear as a USB drive on your computer.
+3. Transfer the firmware
+   You can copy and paste the UF2 file into the nice!nano using your terminal or file explorer.
 
-![layout](./layout.svg)
+## Layout
+### Default layer [0]
+
+![layout](./Default_Layer.png)
+
+### Number layer [1]
+
+![layout](./Number_Layer.png)
+
+### Symbol layer [2]
+
+![layout](./Symbol_Layer.png)
+
+### Mouse & Meh layer [3]
+
+![layout](./Mouse_Layer.png)
+
+### Hotkey (Intellij) layer [4]
+
+![layout](./Hotkey_Layer.png)
+ 
