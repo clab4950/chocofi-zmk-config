@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 
 #define DEFAULT_L 0
 
@@ -460,198 +461,139 @@
     };
 
     macros {
-        aacute: aacute {
+        reformat: aacute {
             compatible = "zmk,behavior-macro";
             label = "AACUTE";
             #binding-cells = <0>;
-            bindings = <&always_acute &kp A>;
+            bindings = <&kp LC(LA(O)) &kp LA(LC(L))>;
         };
 
-        eacute: eacute {
+        rename: rename {
             compatible = "zmk,behavior-macro";
-            label = "EACUTE";
             #binding-cells = <0>;
-            bindings = <&always_acute &kp E>;
+            bindings = <&kp LS(F6)>;
+            label = "RENAME";
         };
 
-        iacute: iacute {
+        explore: explore {
             compatible = "zmk,behavior-macro";
-            label = "IACUTE";
             #binding-cells = <0>;
-            bindings = <&always_acute &kp I>;
+            bindings = <&kp LG(E)>;
+            label = "EXPLORE";
         };
 
-        oacute: oacute {
+        comment: comment {
             compatible = "zmk,behavior-macro";
-            label = "OACUTE";
             #binding-cells = <0>;
-            bindings = <&always_acute &kp O>;
+            bindings = <&kp LC(SLASH)>;
+            label = "COMMENT";
         };
 
-        uacute: uacute {
+        inline_comment: inline_comment {
             compatible = "zmk,behavior-macro";
-            label = "UACUTE";
             #binding-cells = <0>;
-            bindings = <&always_acute &kp U>;
+            bindings = <&kp LS(LC(SLASH))>;
+            label = "INLINE_COMMENT";
         };
 
-        acirc: acirc {
+        replace: replace {
             compatible = "zmk,behavior-macro";
-            label = "ACIRC";
             #binding-cells = <0>;
-            bindings = <&always_circ &kp A>;
+            bindings = <&kp LC(R)>;
+            label = "REPLACE";
         };
 
-        ecirc: ecirc {
+        unindent: unindent {
             compatible = "zmk,behavior-macro";
-            label = "ECIRC";
             #binding-cells = <0>;
-            bindings = <&always_circ &kp E>;
+            bindings = <&kp LS(TAB)>;
+            label = "UNINDENT";
         };
 
-        icirc: icirc {
+        find: find {
             compatible = "zmk,behavior-macro";
-            label = "ICIRC";
             #binding-cells = <0>;
-            bindings = <&always_circ &kp I>;
+            bindings = <&kp LC(F)>;
+            label = "FIND";
         };
 
-        ocirc: ocirc {
+        surround: surround {
             compatible = "zmk,behavior-macro";
-            label = "OCIRC";
             #binding-cells = <0>;
-            bindings = <&always_circ &kp O>;
+            bindings = <&kp LA(LC(T))>;
+            label = "SURROUND";
         };
 
-        ucirc: ucirc {
+        override: override {
             compatible = "zmk,behavior-macro";
-            label = "UCIRC";
             #binding-cells = <0>;
-            bindings = <&always_circ &kp U>;
+            bindings = <&kp LC(O)>;
+            label = "OVERRIDE";
         };
 
-        atilde: atilde {
+        import: import {
             compatible = "zmk,behavior-macro";
-            label = "ATILDE";
             #binding-cells = <0>;
-            bindings = <&always_tilde &kp A>;
+            bindings = <&kp LA(KP_ENTER)>;
+            label = "IMPORT";
         };
 
-        otilde: otilde {
+        implement: implement {
             compatible = "zmk,behavior-macro";
-            label = "OTILDE";
             #binding-cells = <0>;
-            bindings = <&always_tilde &kp O>;
+            bindings = <&kp LC(I)>;
+            label = "IMPLEMENT";
         };
 
-        ao: ao {
+        constructor: constructor {
             compatible = "zmk,behavior-macro";
-            label = "AO";
             #binding-cells = <0>;
-            bindings = <&always_tilde &kp A &kp O>;
+            bindings = <&kp LA(INSERT)>;
+            label = "CONSTRUCTOR";
         };
 
-        oes: oes {
+        run: run {
             compatible = "zmk,behavior-macro";
-            label = "OES";
             #binding-cells = <0>;
-            bindings = <&always_tilde &kp O &kp E &kp S>;
+            bindings = <&kp LS(F10)>;
+            label = "RUN";
         };
 
-        vim_word: vim_word {
+        debug: debug {
             compatible = "zmk,behavior-macro";
-            label = "VIM_WORD";
             #binding-cells = <0>;
-            bindings = <&kp LA(RIGHT) &kp LA(RIGHT) &kp LA(LEFT)>;
+            bindings = <&kp LS(F9)>;
+            label = "DEBUG";
         };
 
-        previous_line_enter: previous_line_enter {
+        lambda: lambda {
             compatible = "zmk,behavior-macro";
-            label = "PREVIOUS_LINE_ENTER";
             #binding-cells = <0>;
-            bindings = <&kp LG(LEFT) &kp LS(ENTER) &kp LEFT>;
+            bindings = <&kp MINUS &kp GT &kp LEFT_BRACE &kp RBRC>;
+            label = "LAMBDA";
         };
 
-        vim_I: vim_I {
+        string1: string1 {
             compatible = "zmk,behavior-macro";
-            label = "VIM_I";
             #binding-cells = <0>;
-            bindings = <&kp LG(LEFT_ARROW) &to 0>;
+            bindings = <&kp LS(H) &kp Y &kp D &kp R &kp O &kp G &kp E &kp N &kp LS(P) &kp E &kp R &kp O &kp X &kp I &kp D &kp E &kp UNDER &kp LS(H) &kp N2 &kp LS(O) &kp N2 &kp KP_ENTER>;
+            label = "STRING1";
         };
 
-        aes: aes {
-            compatible = "zmk,behavior-macro";
-            label = "AES";
-            #binding-cells = <0>;
-            bindings = <&always_tilde &kp A &kp E &kp S>;
-        };
-
-        esc_0: esc_0 {
-            compatible = "zmk,behavior-macro";
-            label = "ESC_0";
-            #binding-cells = <0>;
-            bindings = <&to 0 &kp ESCAPE>;
-        };
-
-        next_line_enter: next_line_enter {
-            compatible = "zmk,behavior-macro";
-            label = "NEXT_LINE_ENTER";
-            #binding-cells = <0>;
-            bindings = <&kp LG(RIGHT) &kp ENTER>;
-        };
-
-        thic_arrow: thic_arrow {
+        string2: string2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp GT>;
-            label = "THIC_ARROW";
-        };
-
-        thin_arrow: thin_arrow {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp MINUS &kp GT>;
-            label = "THIN_ARROW";
-        };
-
-        agrave: agrave {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&always_grave &kp A>;
-            label = "AGRAVE";
-        };
-
-        gte: gte {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp GT &kp EQUAL>;
-            label = "GTE";
-        };
-
-        lte: lte {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LT &kp EQUAL>;
-            label = "LTE";
+            bindings = <&kp LS(S) &kp AT &kp L &kp PLUS &kp LS(N) &kp A &kp N1 &kp LS(C) &kp L &kp N1 &kp KP_ENTER>;
+            label = "STRING2";
         };
     };
 
     combos {
         compatible = "zmk,combos";
 
-        RESET {
-            bindings = <&esc_0>;
-            key-positions = <12 17>;
-        };
-
         toggle_shift {
             bindings = <&caps_word>;
             key-positions = <16 13>;
-        };
-
-        RESET_w {
-            bindings = <&esc_0>;
-            key-positions = <14 15>;
         };
     };
 
@@ -690,10 +632,10 @@
 
         mouse {
             bindings = <
-  &trans  &trans  &ecirc  &trans  &trans    &trans  &ucirc  &icirc  &ocirc  &trans
-  &acirc  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                  &trans  &trans  &trans    &trans  &trans  &trans
+  &kp LG(LEFT_ARROW)  &kp LG(UP_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &none        &none  &none  &none  &none  &none
+  &none               &none             &none               &none                &none        &none  &none  &none  &none  &none
+  &none               &none             &none               &none                &none        &none  &none  &none  &none  &none
+                                        &mkp LCLK           &mkp MCLK            &mkp RCLK    &none  &none  &none
             >;
 
             label = "circ";
@@ -701,10 +643,10 @@
 
         hotkeys {
             bindings = <
-  &trans   &trans  &trans     &trans  &trans    &trans  &trans     &trans  &oes    &trans
-  &atilde  &ao     &aes       &trans  &trans    &trans  &trans     &trans  &trans  &trans
-  &trans   &trans  &kp LA(C)  &trans  &trans    &trans  &kp TILDE  &trans  &trans  &trans
-                   &trans     &trans  &trans    &trans  &trans     &trans
+  &find      &override        &implement  &constructor  &run         &none     &none           &none         &none           &none
+  &unindent  &surround        &import     &none         &debug       &string2  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+  &replace   &inline_comment  &comment    &explore      &rename      &string1  &none           &none         &none           &none
+                              &lambda     &reformat     &kp LC(A)    &none     &none           &none
             >;
         };
     };
