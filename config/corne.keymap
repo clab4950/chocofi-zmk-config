@@ -28,7 +28,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
 
-            quick-tap-ms = <180>;
+            quick-tap-ms = <300>;
         };
 
         slashandbackslash: slashandbackslash {
@@ -38,17 +38,6 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LALT|MOD_RALT)>;
-        };
-
-        shift_tap: shift_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SHIFT_TAP";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            flavor = "tap-preferred";
-            quick-tap-ms = <200>;
         };
     };
 
@@ -205,10 +194,10 @@
         default_layer {
             label = "DEF";
             bindings = <
-  &kp Q       &kp W           &kp F               &kp P                    &kp B        &kp J        &kp L                     &kp U                &kp Y            &kp DOUBLE_QUOTES
-  &hm LGUI A  &hm LEFT_ALT R  &hm LEFT_CONTROL S  &shift_tap LEFT_SHIFT T  &kp G        &kp M        &shift_tap RIGHT_SHIFT N  &hm RIGHT_CONTROL E  &hm RIGHT_ALT I  &hm RIGHT_GUI O
-  &kp Z       &kp X           &kp C               &kp D                    &kp V        &kp K        &kp H                     &kp COMMA            &kp PERIOD       &kp UNDER
-                              &kp ESCAPE          &lt 1 SPACE              &lt 2 TAB    &lt 3 ENTER  &lt 4 BACKSPACE           &kp DELETE
+  &kp Q       &kp W           &kp F               &kp P             &kp B        &kp J        &kp L              &kp U                &kp Y            &kp DOUBLE_QUOTES
+  &hm LGUI A  &hm LEFT_ALT R  &hm LEFT_CONTROL S  &hm LEFT_SHIFT T  &kp G        &kp M        &hm RIGHT_SHIFT N  &hm RIGHT_CONTROL E  &hm RIGHT_ALT I  &hm RIGHT_GUI O
+  &kp Z       &kp X           &kp C               &kp D             &kp V        &kp K        &kp H              &kp COMMA            &kp PERIOD       &kp UNDER
+                              &kp ESCAPE          &lt 1 SPACE       &lt 2 TAB    &lt 3 ENTER  &lt 4 BACKSPACE    &kp DELETE
             >;
         };
 
